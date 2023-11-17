@@ -128,8 +128,9 @@ export const getServerSideProps = async (context) => {
   }
 
   return {
-    props: { cookies },
+    props: { cookies,
     server_port: process.env.SERVER_PORT,
     server_host: process.env.SERVER_HOST,
+  },
   };
 };

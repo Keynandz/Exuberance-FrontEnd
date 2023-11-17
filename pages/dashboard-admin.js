@@ -173,7 +173,7 @@ export const getServerSideProps = async (context) => {
   }
 
   try {
-    const response = await fetch(`http://${process.env.SERVER_WEB}:${process.env.SERVER_PORT}/connection/exuberance/auditlog`, {
+    const response = await fetch(`http://${process.env.SERVER_HOST}:${process.env.SERVER_PORT}/connection/exuberance/auditlog`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
